@@ -344,37 +344,6 @@ $ yarn run start or npm run start
 - AI를 활용해 여러 개의 디자인을 자동 생성
 - 사용자가 선택 후 미세 조정 가능하도록 설정
 <br>
-
-
-**[ 커뮤니티 상세 ]**
-
-<img src="https://github.com/RE-V-UP/v-up-ver2/assets/134026105/0389e2ef-ea63-46bd-9e3c-ab9dfc7015c2" width="400px" height="300px" >
-<br>
-
-- 하이퍼 링크, 색상, 스타일 등 서식 있는 텍스트를 생성하고 편집하여 커스텀가능
-- 필요한 시점의 렌더링으로 텍스트를 입출력될 때 발생하는 변화를 효율적으로 처리
-- Dompurify를 함께 사용해 텍스트를 보호해 안전한 환경을 제공
-- 해당 게시글의 좋아요를 클릭 가능
-<br>
-
-
-**[ 검색 ]**
-
-- 노래 검색
-<img src="https://github.com/RE-V-UP/v-up-ver2/assets/134026105/a118c340-c501-4a9c-9da0-74206d99360a" width="400px" height="300px" >
-<br>
-<br>
-
-- 커뮤니티 검색
-<img src="https://github.com/RE-V-UP/v-up-ver2/assets/134026105/9f7b5eed-6605-4e4f-abf2-1703d13eb5d9" width="400px" height="300px" >
-<br>
-
-- 대소문자 구분 없이 음악 제목 또는 아티스트명으로 음악 검색
-- 대소문자 구분 없이 커뮤니티 제목으로 게시글 검색
-- 페이지네이션
-- 한 페이지당 보여줄 요소의 개수를 arg로 적용
-- 전체 페이지가 한 페이지 이상이면 화살표 아이콘을 이용해 다음 페이지 전환
-<br>
 </details>
 
 
