@@ -1,4 +1,4 @@
-# <img src="https://github.com/RE-V-UP/v-up-ver2/assets/134026105/fc11bb48-13c3-41a8-a344-3979391a1cd7" witdh="300px" height="150px" />
+# BlogThumbnail_AI
 
 <!-- 참고 깃허브 : https://github.com/seokahee/RE-V-UP-VER3/blob/chore/search-player/README.md#installation -->
 <!-- 
@@ -49,17 +49,15 @@
 <summary><h2> 🚀 Project Overview 🚀 </h2></summary>
 <hr noshade>
 
-- __프로젝트 명__ : V-UP (Volume Up, 불륨업)
+- __프로젝트 명__ : BlogThumbnail_AI
 
-- __프로젝트 소개__ : 음악 플레이어와 커뮤니티를 동시에 즐길 수 있는 플랫폼
+- __프로젝트 소개__ : Tistory 게시글 요약을 기반으로 대표 사진 자동 생성 프로젝트 기획
 
-- __프로젝트 목표__ : 플레이어로 음악을 들으면서, 커뮤니티를 통해 사용자들은 평소 취향에 맞는 음악을 추천하고 추천받음과 동시에 또 평소에 많이 듣지 않은 장르도 편하게 탐색. 사용자에게 다양한 음악 경험을 제공
+- __프로젝트 목표__ : 사용자가 티스토리에 작성한 게시글의 내용을 요약하여 한눈에 파악할 수 있는 대표 사진(썸네일)을 자동 생성하는 AI 시스템 구축. 깔끔하고 가독성 높은 디자인을 유지하면서도, 게시글의 핵심 내용을 효과적으로 전달하는 썸네일 제작
 
-- __개발 기간__ : 2024.03. 25~ 2024.05.01 (약 5주간)
+- __개발 기간__ : 2025.03.27 ~ 2025.04.01 (약 6일간)
 
-- __팀 노션__ : [V-UP (Volume Up, 불륨업)](https://www.notion.so/VakVakVerse-16f2aa0964ad45f4b09dee8683b39c23)
-
-- __발표 자료__ : https://www.canva.com/design/DAGDnKcIjGI/oBJswMRAhDifvn7f2FFMRQ/view?utm_content=DAGDnKcIjGI&utm_campaign=designshare&utm_medium=link&utm_source=editor
+- __프로젝트 블로그__ : [V-UP (Volume Up, 불륨업)](https://www.notion.so/VakVakVerse-16f2aa0964ad45f4b09dee8683b39c23)
 
 - __시연 영상__ : https://www.youtube.com/watch?v=zsFyAOfzZy0
 <br>
@@ -268,117 +266,81 @@ $ yarn run start or npm run start
 <summary><h2> ✨ Project UI & Feature Overview ✨ </h2></summary>
 <hr noshade>
 
-**[ 플레이어 ]**
+**[ 입력데이터 ]**
 
 <img src="https://github.com/RE-V-UP/v-up-ver2/assets/134026105/6a6fdbf0-b226-47af-9938-f8fc810965c1" width="400px" height="300px" >
 <br>
 
-- react-h5-audio-player 라이브러리를 활용하여 음악 재생
-- 현재 재생중인 노래가 끝나면 다음곡 자동 재생 이전, 다음 곡을 누르면 즉각 반응
-- 셔플기능으로 목록 순서가 아닌 랜덤 재생
-- 플레이 리스트의 목록 선택, 전체 삭제 선택한 음악 마이플레이 리스트에 저장
-- 서비스 내 모든 음악 drag and drop으로 플레이 리스트에 추가
-- 플레이 리스트 내 목록 순서를 drag and drop으로 변경
+- 사용자가 작성한 티스토리 게시글의 제목 및 요약
+- 핵심 키워드 (필요 시)
+- 글의 주제(IT, 개발, 리뷰, 튜토리얼 등)
 <br>
 
 
-**[ 퍼스널 음악 진단 ]**
+**[ AI 자동 생성 기능 ]**
 
 <img src="https://github.com/RE-V-UP/v-up-ver2/assets/134026105/07a008d4-93d8-4d03-80f3-160ebae5b3b4" width="400px" height="300px" >
 <br>
 
-- 사용자가 입력한 MBTI를 기반으로 해당 유형의 음악 장르별 선호도와 비선호도를 고려하여 추천 음악 선별
-- 추천음악은 현재 재생목록에 추가 가능하며 마이페이지에서 언제든 재진단이 가능
+- 게시글 요약을 분석하여 적절한 핵심 키워드 추출
+- 키워드 기반으로 배경 색상, 글자 색상, 아이콘, 배치 등을 자동 추천
+- 대표 사진을 여러 개 생성하여 사용자에게 선택할 수 있도록 제공
 <br>
 
 
-**[ 마이페이지 ]**
+**[ 디자인 가이드라인 ]**
 
-- 내 정보 수정
+- 깔끔한 디자인 유지
 <img src="https://github.com/RE-V-UP/v-up-ver2/assets/134026105/eea993c7-1c66-42ab-a624-76a85a673472" width="400px" height="300px" >
 <br>
+
+- 필요 없는 요소 배제
+- 한눈에 핵심 내용을 파악할 수 있도록 정리
 <br>
 
-- 팔로워, 팔로잉
+- 색상 조합 추천
 <img src="https://github.com/RE-V-UP/v-up-ver2/assets/134026105/675a7410-0b71-4eeb-8a7f-d29cdaaeb738" width="400px" height="300px" >
 <br>
+
+- 주제별로 적절한 배경 색상과 글씨 색상을 매칭 (예: 보안 이슈 → 파란색, 버그 분석 → 빨간색 등)
 <br>
 
-- 마이 플레이 리스트
+- 아이콘 사용
 <img src="https://github.com/RE-V-UP/v-up-ver2/assets/134026105/4adbdc0a-1fa6-4396-891f-c010b3a479b6" width="400px" height="300px" >
 <br>
-<br>
 
-- 마이페이지 탭 전환
-<img src="https://github.com/RE-V-UP/v-up-ver2/assets/134026105/7ceef60f-1761-485f-a572-26ecbfa87675" width="400px" height="300px" >
-<br>
-
-- 유저 정보 수정(프로필 이미지, 닉네임, 정보 공개 여부 설정-마이플레이리스트, 퍼스널 진단 결과, 내가 작성한 글/좋아요한 글)
-- 팔로잉 및 팔로잉 취소 기능과 팔로우/팔로워 리스트 조회
-- 마이플레이리스트의 노래 관리(추가/삭제)
-- 무한 스크롤을 통한 데이터 조회
-- 내가 작성한 글, 좋아요한 글 페이지네이션을 통한 데이터 조회
+- IT/개발 관련 주제에 맞는 직관적인 아이콘 추가
+- 예: 데이터베이스 → DB 아이콘, 보안 → 자물쇠 아이콘, 코드 관련 → 코드 블록 아이콘
 <br>
 
 
-**[ 유저 프로필 페이지 ]**
+**[ 텍스트 분석 및 키워드 추출 ]**
 
 <img src="https://github.com/RE-V-UP/v-up-ver2/assets/134026105/1328f216-b1a8-451a-8843-59487ecfaab3" width="400px" height="300px" >
 <br>
 
-- 유저 팔로잉 및 팔로잉 취소 기능
-- 유저가 설정한 정보의 공개 여부에 따라 유저의 프로필 정보 확인(유저의 마이플레이리스트, 퍼스널 뮤직 진단 결과, 유저가 좋아하는 글/작성한 글)
-- 유저가 작성한 글, 좋아요한 글 페이지네이션을 통한 데이터 조회
+- NLP(자연어 처리)를 이용해 게시글에서 핵심 키워드 자동 추출
+- 사용자가 직접 키워드를 입력할 수도 있도록 옵션 제공
 <br>
 
 
-**[ 커뮤니티 ]**
+**[ 디자인 템플릿 자동 생성 ]**
 
-- 커뮤니티 리스트
 <img src="https://github.com/RE-V-UP/v-up-ver2/assets/134026105/4c071d52-f5c1-4fe2-a884-da5bab27dbb6" width="400px" height="300px" >
 <br>
+
+- 미리 정의된 템플릿을 활용하여 대표 이미지 생성
+- 배경 색상, 글씨 색상, 폰트 스타일, 아이콘 등을 키워드 기반으로 동적으로 조합
 <br>
 
-- 글 등록
+
+**[ 이미지 생성 및 편집 ]**
+
 <img src="https://github.com/RE-V-UP/v-up-ver2/assets/134026105/75b40b6f-1482-4ebe-a384-aa71988e56ef" width="400px" height="300px" >
 <br>
 
-- 게시글 작성
-- 음악을 공유하는 글을 작성 시, 음악 등록하기 버튼을 클릭하고 들어간 음악 검색 창에서 원하는 음악을 찾아 등록
-- 작성할 때 등록한 음악을 플레이어에 drag and drop으로 끌어놓고 미리 듣기 가능
-- 게시글 목록
-- 등록순과 좋아요순으로 정렬된 게시글을 조회.
-<br>
-
-
-**[ 커뮤니티 상세 ]**
-
-<img src="https://github.com/RE-V-UP/v-up-ver2/assets/134026105/0389e2ef-ea63-46bd-9e3c-ab9dfc7015c2" width="400px" height="300px" >
-<br>
-
-- 하이퍼 링크, 색상, 스타일 등 서식 있는 텍스트를 생성하고 편집하여 커스텀가능
-- 필요한 시점의 렌더링으로 텍스트를 입출력될 때 발생하는 변화를 효율적으로 처리
-- Dompurify를 함께 사용해 텍스트를 보호해 안전한 환경을 제공
-- 해당 게시글의 좋아요를 클릭 가능
-<br>
-
-
-**[ 검색 ]**
-
-- 노래 검색
-<img src="https://github.com/RE-V-UP/v-up-ver2/assets/134026105/a118c340-c501-4a9c-9da0-74206d99360a" width="400px" height="300px" >
-<br>
-<br>
-
-- 커뮤니티 검색
-<img src="https://github.com/RE-V-UP/v-up-ver2/assets/134026105/9f7b5eed-6605-4e4f-abf2-1703d13eb5d9" width="400px" height="300px" >
-<br>
-
-- 대소문자 구분 없이 음악 제목 또는 아티스트명으로 음악 검색
-- 대소문자 구분 없이 커뮤니티 제목으로 게시글 검색
-- 페이지네이션
-- 한 페이지당 보여줄 요소의 개수를 arg로 적용
-- 전체 페이지가 한 페이지 이상이면 화살표 아이콘을 이용해 다음 페이지 전환
+- AI를 활용해 여러 개의 디자인을 자동 생성
+- 사용자가 선택 후 미세 조정 가능하도록 설정
 <br>
 </details>
 
