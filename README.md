@@ -24,7 +24,7 @@
 - 프로젝트 운영 방식 및 Rules 예시
 -->
 
-🚩 [Getting Started Guide](#--Getting-Started-Guide--) 🚩
+<!--🚩 [Getting Started Guide](#--Getting-Started-Guide--) 🚩-->
 <!--
 - Installation
 - Environment variable
@@ -221,6 +221,7 @@
 
 <!-- --------------------------------------------------------------------------------------------------------------- -->
 <!--## 🚩 Getting Started Guide 🚩-->
+<!--
 <details>
 <summary><h2> 🚩 Getting Started Guide 🚩 </h2></summary>
 <hr noshade>
@@ -246,6 +247,7 @@ $ yarn run start or npm run start
 - Supabase 클라이언트를 초기화하기 위한 도우미 파일 : src/shared/supabase/supabase.ts
 <br>
 </details>
+-->
 
 
 
