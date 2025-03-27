@@ -57,9 +57,7 @@
 
 - __개발 기간__ : 2025.03.27 ~ 2025.04.01 (약 6일간)
 
-- __팀 노션__ : [V-UP (Volume Up, 불륨업)](https://www.notion.so/VakVakVerse-16f2aa0964ad45f4b09dee8683b39c23)
-
-- __발표 자료__ : https://www.canva.com/design/DAGDnKcIjGI/oBJswMRAhDifvn7f2FFMRQ/view?utm_content=DAGDnKcIjGI&utm_campaign=designshare&utm_medium=link&utm_source=editor
+- __팀 블로그__ : [V-UP (Volume Up, 불륨업)](https://www.notion.so/VakVakVerse-16f2aa0964ad45f4b09dee8683b39c23)
 
 - __시연 영상__ : https://www.youtube.com/watch?v=zsFyAOfzZy0
 <br>
